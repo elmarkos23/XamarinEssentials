@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinEssentials"
-             x:Class="XamarinEssentials.MainPage">
+             x:Class="XamarinEssentials.MainPage"
+             Title="Xamarin Essentials">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="10">
+            <Button Text="Vibrate" Clicked="Button_Clicked"/>
+            <Button Text="Text to Speech" Clicked="Button_Clicked_1"/>
+        </StackLayout>
 
+    </ScrollView>
 </ContentPage>
