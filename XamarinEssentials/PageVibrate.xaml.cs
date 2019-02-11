@@ -16,5 +16,21 @@ namespace XamarinEssentials
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Vibrar_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Vibration.Cancel();
+            }
+            catch (FeatureNotSupportedException ex)
+            {
+                // Feature not supported on device
+            }
+            catch (Exception ex)
+            {
+                // Other error has occurred.
+            }
+        }
+    }
 }
