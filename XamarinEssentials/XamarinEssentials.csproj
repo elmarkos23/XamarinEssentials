@@ -15,7 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="PageText-to-Speech.xaml">
+    <Compile Update="PageTextToSpeech.xaml.cs">
+      <DependentUpon>PageTextToSpeech.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="PageTextToSpeech.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="PageVibrate.xaml">

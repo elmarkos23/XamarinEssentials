@@ -7,9 +7,8 @@
 
     <ScrollView>
         <StackLayout Orientation="Vertical" Padding="10">
-            <Button Text="Vibrate" Clicked="Button_Clicked"/>
-            <Button Text="Text to Speech" Clicked="Button_Clicked_1"/>
+            <Button Text="Vibrate" Clicked="Vibrate_Clicked"/>
+            <Button Text="Text to Speech" Clicked="TextToSpeech_Clicked"/>
         </StackLayout>
-
     </ScrollView>
 </ContentPage>
